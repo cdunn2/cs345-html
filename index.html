@@ -20,13 +20,47 @@
             margin-left: 3em;
         }
 
+        .menu {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: space-between;
+            background-color: #edebeb;
+            padding: 10px;
+        }
+
+        .menu li {
+            margin: 0;
+            padding: 0;
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: #333;
+            padding: 10px;
+            transition: background-color 0.2s;
+        }
+
+        .menu a:hover {
+            background-color: #d1cece;
+        }
+
+
     </style>
 </head>
 <body>
     <h1>Help with Fragile</h1>
-    This is the help page for Fragile. This page is currently under construction.
+    This is the help page for Fragile. This page is currently under construction.<br>
+    <ul class="menu">
+        <li><a href="#interface">Understanding the buttons and interface</a></li>
+        <li><a href="#entry">Entering numbers into calculator</a></li>
+        <li><a href="#solve">Solving</a></li>
+        <li><a href="#exit">Exiting the program</a></li>
+        <li><a href="#help">Help with and About the Software</a></li>
+    </ul>
+    
 
-    <h3>Understanding the Interface</h3>
+    <h3 id="interface">Understanding the Interface</h3>
     <div class="interface">
         <div><img src="blankCalc.png"></img></div>
         <div class="right">
@@ -46,7 +80,7 @@
     </div>
     <hr>
     
-    <h3>After a Number is Entered</h3>
+    <h3 id="entry">After a Number is Entered</h3>
     <div class="interface">
         <div><img src="one-num.png"></img></div>
         <div class="right">
@@ -60,11 +94,45 @@
 
     <h3>After a Fraction is Entered</h3>
     <div class="interface">
-        <div><img src="pic"></img></div>
+        <div><img src="full-frac.png"></img></div>
         <div class="right">
-        Here, the user has entered ...
+        In the image to the left, the user has entered 8 and 1/2 for the left operand.<br><br>
+        After this is entered, the user should press their operator.<br><br><br><br>
+        This is shown in the image to the right, where the left operand and the operator moves to the display. 
+        </div>
+        <div><img src="left-operand.png" style="margin-left: 3em;"></img></div>
+    </div>
+    <hr>
+
+    <h3 id="solve">Solving the Problem</h3>
+    <div class="interface">
+        <div><img src="img"></img></div>
+        <div class="right">
+        Blah...
+        </div>
+        <div><img src="img" style="margin-left: 3em;"></img></div>
+    </div>
+    <hr>
+
+    <h3 id="exit">Exiting</h3>
+    <div class="interface">
+        <div><img src="file-exit.png"></img></div>
+        <div class="right">
+        To exit the calculator, either select the File menu and "Exit", or select the default close button for your operating system.<br>
 
         </div>
+        
     </div>
+    <hr>
+
+    <h3 id="help">Help and About the Software</h3>
+    <div class="interface">
+        <div><img src="help-menu.png"></img></div>
+        <div class="right">
+        To access the help menu, or learn about the software, select the "Help" menu and 
+        select either "Help" or "About".
+        </div>
+    </div>
+
 </body>
 </html>
