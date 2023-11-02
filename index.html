@@ -3,33 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Help</title>
+    <title>Help with Fragile</title>
     <style>
-        #interface img{
+        .interface img{
             height: 60vh;
         }
 
-        #interface{
+        .interface{
             display: flex;
-            justify-content: space-around;
         }
 
-        #right{
-            height: 60vh;
+        .right{
+            height:min-content;
+            border-style: groove;
+            padding: 1em;
+            margin-left: 3em;
         }
 
     </style>
 </head>
 <body>
-    <h1>Help</h1>
+    <h1>Help with Fragile</h1>
     This is the help page for Fragile. This page is currently under construction.
 
-    <h3>The  Interface</h3>
-    <div id="interface">
-    <div><img src="blankCalc.png"></img></div>
-    <div id="right">
-        This is what the calculator looks like in it's initial state. 
+    <h3>Understanding the Interface</h3>
+    <div class="interface">
+        <div><img src="blankCalc.png"></img></div>
+        <div class="right">
+        This is what the calculator looks like in it's initial state.<br><br>
+        To <b>start a calculation</b>, click on (whole) number to start with.<br><br>
+        For the non-numerical buttons, here are the uses:
+
+        <ul>
+            <li>Clicking on the Clear Button [C] deletes the current mixed fraction.</li><br>
+            <li>Clicking on the Reset Button [R] deletes the entire current expression.</li><br>
+            <li>Clicking on the Backspace Button [←] deletes the most recently entered digit of the current mixed fraction.</li><br>
+            <li>Clicking on the Sign Button (top right) changes the sign of the current mixed fraction.</li><br>
+            <li>Clicking on the Position button [Pos] moves the curser to inside the fraction, starting with the numerator.</li>
+        </ul>
+
+        </div>
     </div>
-</div>
+    <hr>
+    
+    <h3>After a Number is Entered</h3>
+    <div class="interface">
+        <div><img src="one-num.png"></img></div>
+        <div class="right">
+        Here, the user has entered an 8 in the whole number position.<br><br>
+        To enter the <b>numerator</b> of the fraction, simply press the position button, followed by your number.<br><br>
+        After entering the numerator, press the position button again to focus on the <b>denominator</b>.
+
+        </div>
+    </div>
+    <hr>
+
+    <h3>After a Fraction is Entered</h3>
+    <div class="interface">
+        <div><img src="pic"></img></div>
+        <div class="right">
+        Here, the user has entered ...
+
+        </div>
+    </div>
 </body>
 </html>
